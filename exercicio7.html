@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let valorConta = parseFloat(prompt("Digite o valor da conta:"));
+let porcentagemGorjeta = parseFloat(prompt("Digite a portagem de gorjeta (ex: 10 para 10%)"));
+let valorGorjeta = (valorConta * porcentagemGorjeta) / 100;
+let totalConta = valorConta + valorGorjeta;
+
+alert("Valor da conta: R$" + valorConta.toFixed(2) + "\n" +
+     "Porcentagem de gorjeta: " + porcentagemGorjeta + "%\n" +
+     "Valor da gorjeta: R$ " + valorGorjeta.toFixed(2) + "\n" +
+     "Valor a pagar: R$ " + totalConta.toFixed(2));
+
+
+    </script>
+
+
+</body>
+</html>
