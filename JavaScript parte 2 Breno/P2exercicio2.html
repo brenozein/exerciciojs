@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+let n1 = Number(prompt("Digite o primeiro número:"));
+let n2 = Number(prompt("Digite o segundo número:"));
+let operacao = prompt("Digite a operação (+, -, *, /):");
+
+if (operacao === "+"){
+    console.log("Resultado:", n1 + n2);
+} else if (operacao === "-"){
+    console.log("Resultado:", n1 - n2);
+} else if (operacao === "*"){
+    console.log("Resultado:", n2 * n2);
+} else if (operacao === "/"){
+    if (n2 !== 0) {
+        console.log("Resultado:", n1 / n2);
+    } else {
+        console.log("Divisão por zero não é permitida.");
+    }
+} else {
+    console.log("Operação inválida.");
+}
+
+
+
+    
+</script>
+
+</body>
+</html>

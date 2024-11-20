@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+       
+        // Solicita as informações do candidato
+        let nome = prompt("Digite seu nome:");
+        let idade = parseInt(prompt("Digite sua idade:"));
+        let pontuacaoProvaTecnica = parseFloat(prompt("Digite sua pontuação na Prova Técnica (0 a 10):"));
+        let pontuacaoEntrevista = parseFloat(prompt("Digite sua pontuação na Entrevista (0 a 10):"));
+        
+        // Verifica os critérios de seleção
+        
+        if (idade < 18) {
+            alert(`Desculpe, ${nome}, você não atende aos critérios de idade.`);
+        } else if (pontuacaoProvaTecnica < 7) {
+            alert(`Infelizmente, ${nome}, sua pontuação na Prova Técnica foi insuficiente.`);
+        } else if (pontuacaoEntrevista < 6) {
+            alert(`Infelizmente, ${nome}, sua pontuação na Entrevista foi insuficiente.`);
+        } else {
+            // Calcula a média geral
+            let mediaGeral = (pontuacaoProvaTecnica + pontuacaoEntrevista) / 2;
+        
+            // Mensagem de aprovação
+            alert(`Parabéns, ${nome}! Você foi aprovado para a vaga.`);
+            
+            // Verifica se o candidato é "Altamente Qualificado"
+            if (mediaGeral >= 8) {
+                alert("Você é Altamente Qualificado!");
+            }
+        }
+        
+        
+        
+            </script>
+            
+            
+
+
+
+</body>
+</html>
