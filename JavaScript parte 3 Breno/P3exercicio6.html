@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    
+<script>
+
+let nomeProduto = prompt("Digite o nome do produto:");
+let precoOriginal = parseFloat(prompt("Digite o preço original do produto:"));
+let porcentagemDesconto = parseFloat(prompt("Digite a porcentagem de desconto:"));
+let valorDesconto = (porcentagemDesconto / 100) * precoOriginal;
+let precoFinal = precoOriginal - valorDesconto;
+
+
+console.log("Produto: " + nomeProduto);
+console.log("Preço original: R$ " + precoOriginal.toFixed(2));
+console.log("Valor do desconto: R$ " + valorDesconto.toFixed(2));
+console.log("Preço final: R$ " + precoFinal.toFixed(2));
+
+
+</script>
+
+</body>
+</html>

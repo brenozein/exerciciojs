@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    
+    <script>
+
+let nomeProduto = prompt("Digite o nome do produto:");
+let precoUnitario = parseFloat(prompt("Digite o preço unitário do produto:"));
+let quantidade = parseFloat(prompt("Digite a quantidade comprada:"));
+let valorTotal = precoUnitario * quantidade;
+let imposto = valorTotal * 0.18;
+let valorTotalComImposto = valorTotal + imposto;
+
+// Exibe todas as informações
+alert("Produto: " + nomeProduto + "\n" +
+      "Preço Unitário: R$ " + precoUnitario.toFixed(2) + "\n" +
+      "Quantidade: " + quantidade + "\n" +
+      "Imposto (18%): R$ " + imposto.toFixed(2) + "\n" +
+      "Valor Total (com imposto): R$ " + valorTotalComImposto.toFixed(2));
+
+
+    </script>
+
+</body>
+</html>
