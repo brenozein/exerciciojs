@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function escolherCor() {
+            
+            let cor = document.getElementById('cor').value.toLowerCase();
+            let resultado = "";
+
+            switch (cor) {
+                case "red":
+                    resultado = "A cor escolhida é vermelho.";
+                    break;
+                case "blue":
+                    resultado = "A cor escolhida é azul.";
+                    break;
+                case "green":
+                    resultado = "A cor escolhida é verde.";
+                    break;
+                default:
+                    resultado = "Cor desconhecida.";
+            }
+
+            // Exibe o resultado utilizando alert
+            alert(resultado);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function calcularCusto() {
+          const opcao = parseInt(document.getElementById('evento').value);
+          let tipoEvento = "";
+          let custoTotal = 0;
+          let resultHtml = "";
+    
+          switch (opcao) {
+            case 1: // Workshop
+              tipoEvento = "Workshop";
+              const participantes = prompt("Número de participantes:");
+              custoTotal = participantes * 50;
+              resultHtml = `Tipo de evento: ${tipoEvento}<br> Número de participantes: ${participantes}<br> Custo total: R$ ${custoTotal}`;
+              break;
+    
+            case 2: // Palestra
+              tipoEvento = "Palestra";
+              const duracao = prompt("Duração da palestra (em horas):");
+              custoTotal = duracao * 100;
+              resultHtml = `Tipo de evento: ${tipoEvento}<br> Duração: ${duracao} horas<br> Custo total: R$ ${custoTotal}`;
+              break;
+    
+            case 3: // Hackathon
+              tipoEvento = "Hackathon";
+              const dias = prompt("Número de dias:");
+              const equipes = prompt("Número de equipes:");
+              custoTotal = dias * equipes * 500;
+              resultHtml = `Tipo de evento: ${tipoEvento}<br> Número de dias: ${dias}<br> Número de equipes: ${equipes}<br> Custo total: R$ ${custoTotal}`;
+              break;
+    
+            default: // Opção inválida
+              resultHtml = "Opção inválida";
+              break;
+          }
+    
+          // Exibir o resultado
+          document.getElementById("resultado").innerHTML = resultHtml;
+        }
+      </script>
+
+
+</body>
+</html>
